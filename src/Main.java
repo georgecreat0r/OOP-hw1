@@ -3,12 +3,13 @@ public class Main {
     public static void main(String[] args) {
 
         // Инициализация нескольких ГорячихНапитков и ГорячихНапитковАвтомат согласно ТЗ.
-        HotBeverage hb = new HotBeverage("Напиток1", 1, 1, 1);
-        HotBeverage hb1 = new HotBeverage("Напиток2", 1, 1, 1);
-        HotBeverageVendingMachine vm1 = new HotBeverageVendingMachine();
-
-
         HotBeverageVendingMachine vm = new HotBeverageVendingMachine();
+
+        HotBeverage hb = new HotBeverage("Латте", 0.99, 500, 90);
+        HotBeverage hb1 = new HotBeverage("Глинтвейн", 1.99, 450, 85);
+
+        vm.add(hb);
+        vm.add(hb1);
 
         System.out.println("override");
         printProduct(vm.getProduct("Чай"));
